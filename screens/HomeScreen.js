@@ -49,7 +49,7 @@ export default class HomeScreen extends React.Component {
           <Text style={[styles.headline, styles.blue]}>
             Welcome to the Scandinair app!
           </Text>
-          <Text style={[styles.blue, styles.center]}>Search for at flight</Text>
+          <Text style={[styles.blue, styles.center]}>Search for a flight</Text>
         </View>
       );
     }
