@@ -16,7 +16,7 @@ class UserFetch {
         console.log("token", token);
         var decoded = jwt_decode(token);
         const options = await this.makeOptions("GET", true); //True add's the token
-        return fetch(URL + "/api/info/" + decoded.username, options).then(handleHttpErrors);
+        return fetch(URL + "/api/info/" + decoded.username, options).then(handleHttpErrors).then( data => data.flightWish );;
     };
 
     login = async (user, pass) => {
